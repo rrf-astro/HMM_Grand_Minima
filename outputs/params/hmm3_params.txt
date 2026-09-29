@@ -1,0 +1,91 @@
+======================================================================
+  3-STATE HMM -- MODEL PARAMETERS (Advances in Space Research, Q2 paper)
+======================================================================
+
+Input variable       : log1p_mean_groups = log(1 + mean_groups)
+Training period      : 1611-2010
+Training years       : 339
+Excluded years (NaN) : 62
+Restarts per model   : 50
+
+BIC model selection (n_states = 2, 3, 4):
+  n=2  log_L= -232.4701  k=  7  BIC=  505.7223
+  n=3  log_L= -144.2298  k= 14  BIC=  370.0237  <- SELECTED
+  n=4  log_L= -105.0416  k= 23  BIC=  344.0813
+
+Raw BIC optimum is n=4; n=3 is selected instead on physical/convergence grounds (see markdown discussion above).
+
+Winning seed (n=3) : 6
+Log-likelihood            : -144.229828
+
+Emission parameters (log1p scale / original scale):
+  State A (Normal)    : mu=1.743773, sigma=0.364557  (~4.719 groups/day)
+  State B (Reduced)   : mu=0.677781, sigma=0.338759  (~0.970 groups/day)
+  State C (Grand Min): mu=0.031798, sigma=0.045668  (~0.032 groups/day)
+
+Transition matrix (A, B, C order):
+  A -> 0.827849  0.172151  0.000000
+  B -> 0.156224  0.806214  0.037562
+  C -> 0.000000  0.103676  0.896324
+
+Expected duration (yr): A=5.8, B=5.2, C=9.6
+Shannon entropy (bits): H(A)=0.6626, H(B)=0.8468, H(C)=0.4805
+
+Active-fraction validation (not used in training):
+  State A: n=139, active_fraction=0.978 +/- 0.035, mean_groups=5.152
+  State B: n=147, active_fraction=0.590 +/- 0.255, mean_groups=1.045
+  State C: n= 53, active_fraction=0.031 +/- 0.045, mean_groups=0.034
+
+State-C years (53): [1648, 1652, 1653, 1654, 1657, 1659, 1660, 1661, 1662, 1663, 1664, 1666, 1667, 1668, 1669, 1670, 1671, 1672, 1673, 1674, 1675, 1677, 1678, 1679, 1680, 1681, 1682, 1683, 1685, 1686, 1687, 1688, 1689, 1690, 1691, 1692, 1693, 1694, 1695, 1696, 1697, 1698, 1699, 1700, 1701, 1702, 1710, 1711, 1712, 1713, 1809, 1810, 1811]
+State-C contiguous intervals:
+  1648-1648 (1 yr)
+  1652-1654 (3 yr)
+  1657-1657 (1 yr)
+  1659-1664 (6 yr)
+  1666-1675 (10 yr)
+  1677-1683 (7 yr)
+  1685-1702 (18 yr)
+  1710-1713 (4 yr)
+  1809-1811 (3 yr)
+
+State-B years (147), contiguous intervals:
+  1616-1616 (1 yr)
+  1618-1618 (1 yr)
+  1620-1621 (2 yr)
+  1624-1627 (4 yr)
+  1629-1629 (1 yr)
+  1631-1632 (2 yr)
+  1634-1634 (1 yr)
+  1642-1644 (3 yr)
+  1676-1676 (1 yr)
+  1684-1684 (1 yr)
+  1703-1709 (7 yr)
+  1714-1718 (5 yr)
+  1721-1722 (2 yr)
+  1725-1726 (2 yr)
+  1733-1733 (1 yr)
+  1740-1740 (1 yr)
+  1752-1752 (1 yr)
+  1754-1757 (4 yr)
+  1763-1767 (5 yr)
+  1773-1776 (4 yr)
+  1794-1808 (15 yr)
+  1812-1826 (15 yr)
+  1832-1834 (3 yr)
+  1841-1844 (4 yr)
+  1854-1857 (4 yr)
+  1865-1867 (3 yr)
+  1875-1880 (6 yr)
+  1886-1890 (5 yr)
+  1897-1903 (7 yr)
+  1910-1914 (5 yr)
+  1921-1924 (4 yr)
+  1931-1934 (4 yr)
+  1943-1944 (2 yr)
+  1952-1954 (3 yr)
+  1962-1965 (4 yr)
+  1975-1977 (3 yr)
+  1985-1987 (3 yr)
+  1995-1997 (3 yr)
+  2006-2010 (5 yr)
+======================================================================

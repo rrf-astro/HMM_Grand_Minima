@@ -1,0 +1,17 @@
+# Dependencies for solar_grand_minima_hmm.ipynb.
+# Pinned to the exact versions the notebook was built and verified against
+# (confirmed to reproduce annual_series.csv, coverage.csv, ASR/bic_table.csv,
+# ASR/results_q2.csv, hmm2_params.txt and ASR/hmm3_params.txt exactly).
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+hmmlearn==0.3.3
+pandas==3.0.6
+matplotlib==3.11.2
+
+# Notebook execution
+jupyterlab==4.6.4
+notebook==7.6.3
+ipykernel==7.3.0
+nbconvert==7.17.1
+nbformat==5.11.1
