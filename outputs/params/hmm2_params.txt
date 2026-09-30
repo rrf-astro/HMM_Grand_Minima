@@ -1,5 +1,5 @@
 =================================================================
-  2-STATE HMM -- MODEL PARAMETERS (RNAAS proof of concept)
+  2-STATE HMM -- MODEL PARAMETERS (proof of concept)
 =================================================================
 
 Input variable         : mean_groups

@@ -1,5 +1,5 @@
 ======================================================================
-  3-STATE HMM -- MODEL PARAMETERS (Advances in Space Research, Q2 paper)
+  3-STATE HMM -- MODEL PARAMETERS
 ======================================================================
 
 Input variable       : log1p_mean_groups = log(1 + mean_groups)
@@ -7,6 +7,7 @@ Training period      : 1611-2010
 Training years       : 339
 Excluded years (NaN) : 62
 Restarts per model   : 50
+hmmlearn version      : 0.3.3
 
 BIC model selection (n_states = 2, 3, 4):
   n=2  log_L= -232.4701  k=  7  BIC=  505.7223
